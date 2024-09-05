@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RRUHFOEM09 V1</string>
+    <string name="battery_frame_image_1">Battery frame image 1</string>
+    <string name="battery_frame_image_2">Battery frame image 2</string>
+    <string name="btn_search">search ble</string>
+    <string name="hex_data">Hex Data</string>
+    <string name="send_test_command">Send Test Command</string>
+    <string name="clear_logs">Clear Logs</string>
+    <string name="search_device">Searching Devices…</string>
+    <string name="str_msg_mode_no_support">Device Not Found, or Central mode is not supported in your device.</string>
+    <string name="text_connecting">connecting&#8230;</string>
+    <string name="search_ble">Search Ble</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="battery_level">Battery Level</string>
+    <string name="inventory">Inventory</string>
+</resources>

@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.rr.hf.rruhfoem09v1.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimaryDark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <ImageView
+                android:id="@+id/battery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_battery_full_24"
+                android:contentDescription="@string/battery_frame_image_1" />
+
+            <ImageView
+                android:id="@+id/battery_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/progress_bar_drawable"
+                android:contentDescription="@string/battery_frame_image_2" />
+
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/btnContainer"
+        android:layout_width="match_parent"
+        android:background="@color/teal_700"
+        android:layout_height="0dp"
+        android:layout_weight="0.30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_search" />
+
+            <EditText
+                android:id="@+id/txtData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Hex Data"
+                android:hint="@string/hex_data"
+                android:inputType="text"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btnWr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_test_command"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btnInvt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inventory"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clear_logs"
+                android:enabled="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/txtContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.70">
+        <TextView
+            android:id="@+id/logTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>
